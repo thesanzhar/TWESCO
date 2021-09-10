@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/icons/logo-icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <title>Медиагалерея - TWESCO</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header__up">
+        <div class="header__social">
+          <a href="#"><img src="img/icons/ig-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/vk-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/tw-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/fb-icon.svg" alt="" class="header__social_items"></a>
+          <!-- <a href="#"><img src="img/icons/apple-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/playstore-icon.svg" alt="" class="header__social_items"></a> -->
+        </div>
+        <div class="header__logo">
+          <a href="index.html"><img src="img/main-logo.svg" alt="" class="header__logo_item"></a>
+        </div>
+        <div class="header__search_lang">
+          <div class="header__search">
+            <form class="header__search_box" id="headerSearchBox" action="">
+              <input class="header__search_box_item" type="text" name="query" placeholder="Поиск">
+            </form>
+            <a href="#" onclick="mySearch()"><img src="img/icons/search-icon.svg" alt="" class="header__search_icon"></a>
+          </div>
+          <div class="header__lang">
+            <select>
+              <option value="0">Қаз</option>
+              <option value="1">Қаз</option>
+              <option value="2">Рус</option>
+              <option value="3">Eng</option>
+              <option value="4">Tür</option>
+            </select>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <hr class="header__line">
+      <div class="header__down">
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__menu_dropdown">
+              <a href="index.html" class="header__menu_droplink">Главная</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="about.html" class="header__menu_droplink">О тюрской академии</a>
+              <div class="header__menu_dropdown_content">
+                <a href="#" class="header__menu_dropdown_items">История</a>
+                <a href="#" class="header__menu_dropdown_items">Страны учредители</a>
+                <a href="#" class="header__menu_dropdown_items">Сотрудничество</a>
+                <a href="#" class="header__menu_dropdown_items">Партнеры</a>
+                <a href="#" class="header__menu_dropdown_items">Структура</a>
+                <a href="#" class="header__menu_dropdown_items">Руководства</a>
+                <a href="#" class="header__menu_dropdown_items">Музей</a>
+                <a href="#" class="header__menu_dropdown_items">Библиотека</a>
+                <a href="#" class="header__menu_dropdown_items">Документы</a>
+              </div>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="news.html" class="header__menu_droplink">Новости Академии</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="#" class="header__menu_droplink">СМИ о Академии</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="media.html" class="header__menu_droplink">Медиа</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="openBook.html" class="header__menu_droplink">Библиотека</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="#" class="header__menu_droplink">Тюркопедия</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="#" class="header__menu_droplink">Архив</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="contacts.html" class="header__menu_droplink">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__search_adaptive">
+            <a href="#" onclick="mySearchAdaptive()"><img src="img/icons/search-icon.svg" alt="" class="header__search_icon"></a>
+            <form class="header__search_adaptive_box" id="headerSearchAdaptiveBox" action="" style="display: block;">
+              <input class="header__search_adaptive_box_item" type="text" name="query" placeholder="Поиск">
+            </form>
+          </div>
+          <div class="header__social_adaptive">
+            <a href="#"><img src="img/icons/ig-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/vk-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/tw-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/fb-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/apple-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/playstore-icon.svg" alt="" class="header__social_adaptive_items"></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <hr class="header__line">
+  </header>
+  
+  <section class="media">
+    <div class="container">
+      <div class="media__header">
+        <a href="index.html" class="media__pages">Главная</a>
+        <img src="img/icons/arrow-right.svg" alt="" class="media__arrow_right">
+        <a href="#" class="media__pages media_page_active">Медиагалерея</a>
+      </div>
+      <div class="media__articles">
+        <h1 class="media__article_title">Фото</h1>
+        <div class="media__article_types">
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+        </div>
+        <button class="media__article_btn">
+          <img src="img/icons/upload-more-icon.svg" alt="" class="media__article_upload_img">
+          <p class="media__article_upload_text">Загрузить больше</p>
+        </button>
+      </div>
+      <div class="media__articles">
+        <h1 class="media__article_title">Видео</h1>
+        <div class="media__article_types">
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/icons/play-icon.svg" alt="" class="media__article_icon">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/icons/play-icon.svg" alt="" class="media__article_icon">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/icons/play-icon.svg" alt="" class="media__article_icon">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+          <a href="#" class="media__article_items">
+            <div class="media__article_img_block">
+              <img src="img/icons/play-icon.svg" alt="" class="media__article_icon">
+              <img src="img/article-item1.jpg" alt="" class="media__article_img">
+            </div>
+            <div class="media_date_view">
+              <div class="media_date">
+                <img src="img/icons/time-icon.svg" alt="">
+                <p>в 10:30</p>
+              </div>
+              <div class="media_view">
+                <img src="img/icons/eye-icon.svg" alt="">
+                <p>126</p>
+              </div>
+            </div>
+            <h2 class="media__article_name">
+              Мероприятие, посвященное 100-летию национально-освободительной борьбы во главе с Мустафой Кемалем
+            </h2>
+            <h2 class="media__article_subname">
+              Указанное мероприятие прошло 17 мая 2019 года в г. Нур-Султане, в Национальной академической библиотеке Республики Казахстан. В ходе мероприятия была…
+            </h2>
+            <div class="media__article_readmore">
+              <h2>Читать подробнее</h2>
+              <img src="img/icons/arrow-right-2.svg" alt="">
+            </div>
+          </a>
+        </div>
+        <button class="media__article_btn">
+          <img src="img/icons/upload-more-icon.svg" alt="" class="media__article_upload_img">
+          <p class="media__article_upload_text">Загрузить больше</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer> 
+    <div class="container">
+      <div class="footer__up">
+        <a href="index.html"><img src="img/main-logo.svg" alt="" class="footer__logo"></a>
+        <div class="footer__up_items">
+          <ul>
+            <li><a href="#">Біз туралы</a></li>
+            <li><a href="#">Архив</a></li>
+            <li><a href="#">Байланыс</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__content1">
+        <h3 class="footer__content1_text">
+          Тәуелсіздік даңғылы , <strong>010000</strong>, <br>
+          "Бейбітшілік және келісім сарайы" <br>
+          Қазақстан, Нұр-Сұлтан қаласы, <strong>010000</strong>
+        </h3>
+        <div class="footer__social">
+          <a href="#"><img src="img/icons/ig-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/vk-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/tw-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/fb-icon.svg" alt="" class="footer__social_items"></a>
+          <!-- <a href="#"><img src="img/icons/apple-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/playstore-icon.svg" alt="" class="footer__social_items"></a> -->
+        </div>
+      </div>
+      <div class="footer__content2">
+        <h3 class="footer__content2_text">
+          Қабылдау бөлмесі: <br>
+          <a href="tel:+77172574982">+7(7172)57-49-82</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          Халықаралық қатынастар <br>
+          және протокол бөлімі: <br>
+          <a href="tel:87273540094">8-727-354-00-94</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          Түркі кітапханасы: <br>
+          <a href="tel:+77172744786">+7(7172)74-47-86</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          Ғылым бөлімі: <br>
+          <a href="tel:+77172744785">+7(7172)74-47-85</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          E-mail: <br> 
+          <a href="mailto:officetwesco@gmail.com">officetwesco@gmail.com</a>
+        </h3>
+      </div>
+      <div class="footer__down">
+        <h3 class="footer__down_text">
+          <strong>© Copyright 2015-2021 TWESCO</strong>| Сайт материалын пайдалану үшін редакция <br> келісімі керек және гиперсілтеме жасау міндетті
+        </h3>
+        <h3 class="footer__down_text">
+          Қате тапсаңыз — қажетті бөлікті таңдап <span>ctrl+enter</span> басыңыз.
+        </h3>
+        <h3 class="footer__down_text">
+          Сайт жасалуы , <a href="#"><img class="footer__dev_logo" src="img/icons/logo-buginsoft.svg" alt=""></a>
+        </h3>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/modal-video.min.js"></script>
+  <script src="js/flipbook.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

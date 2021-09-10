@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/icons/logo-icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/modal-video.min.css">
+  <title>Главная - TWESCO</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header__up">
+        <div class="header__social">
+          <a href="#"><img src="img/icons/ig-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/vk-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/tw-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/fb-icon.svg" alt="" class="header__social_items"></a>
+          <!-- <a href="#"><img src="img/icons/apple-icon.svg" alt="" class="header__social_items"></a>
+          <a href="#"><img src="img/icons/playstore-icon.svg" alt="" class="header__social_items"></a> -->
+        </div>
+        <div class="header__logo">
+          <a href="index.html"><img src="img/main-logo.svg" alt="" class="header__logo_item"></a>
+        </div>
+        <div class="header__search_lang">
+          <div class="header__search">
+            <form class="header__search_box" id="headerSearchBox" action="">
+              <input class="header__search_box_item" type="text" name="query" placeholder="Поиск">
+            </form>
+            <a href="#" onclick="mySearch()"><img src="img/icons/search-icon.svg" alt="" class="header__search_icon"></a>
+          </div>
+          <div class="header__lang">
+            <select>
+              <option value="0">Қаз</option>
+              <option value="1">Қаз</option>
+              <option value="2">Рус</option>
+              <option value="3">Eng</option>
+              <option value="4">Tür</option>
+            </select>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <hr class="header__line">
+      <div class="header__down">
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__menu_dropdown">
+              <a href="index.html" class="header__menu_droplink">Главная</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="about.html" class="header__menu_droplink">О тюрской академии</a>
+              <div class="header__menu_dropdown_content">
+                <a href="#" class="header__menu_dropdown_items">История</a>
+                <a href="#" class="header__menu_dropdown_items">Страны учредители</a>
+                <a href="#" class="header__menu_dropdown_items">Сотрудничество</a>
+                <a href="#" class="header__menu_dropdown_items">Партнеры</a>
+                <a href="#" class="header__menu_dropdown_items">Структура</a>
+                <a href="#" class="header__menu_dropdown_items">Руководства</a>
+                <a href="#" class="header__menu_dropdown_items">Музей</a>
+                <a href="#" class="header__menu_dropdown_items">Библиотека</a>
+                <a href="#" class="header__menu_dropdown_items">Документы</a>
+              </div>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="news.html" class="header__menu_droplink">Новости Академии</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="#" class="header__menu_droplink">СМИ о Академии</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="media.html" class="header__menu_droplink">Медиа</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="openBook.html" class="header__menu_droplink">Библиотека</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="#" class="header__menu_droplink">Тюркопедия</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="#" class="header__menu_droplink">Архив</a>
+            </li>
+            <li class="header__menu_dropdown">
+              <a href="contacts.html" class="header__menu_droplink">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__search_adaptive">
+            <a href="#" onclick="mySearchAdaptive()"><img src="img/icons/search-icon.svg" alt="" class="header__search_icon"></a>
+            <form class="header__search_adaptive_box" id="headerSearchAdaptiveBox" action="" style="display: block;">
+              <input class="header__search_adaptive_box_item" type="text" name="query" placeholder="Поиск">
+            </form>
+          </div>
+          <div class="header__social_adaptive">
+            <a href="#"><img src="img/icons/ig-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/vk-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/tw-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/fb-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/apple-icon.svg" alt="" class="header__social_adaptive_items"></a>
+            <a href="#"><img src="img/icons/playstore-icon.svg" alt="" class="header__social_adaptive_items"></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <hr class="header__line">
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="main__content">
+        <div class="main__news">
+          <div class="main__news_swiper">
+            <div class="swiper mainNewsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="main_slider1">
+                  <div class="main__slider_content">
+                    <div class="main__slider_categories">
+                      <p class="main__slider_category">Жаңалықтар</p>
+                      <p class="main__slider_category">Тарих</p>
+                    </div>
+                    <a href="#"><h1 class="main__slider_title">
+                      Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды
+                    </h1></a>
+                    <a href="#" class="main__slider_read_more">
+                      <img src="img/icons/iwwa_arrow-right.svg" alt="" class="main__slider_read_more_img">
+                      <h4 class="main__slider_read_more_text">Толық оқу</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="main_slider2">
+                  <div class="main__slider_content">
+                    <div class="main__slider_categories">
+                      <p class="main__slider_category">Жаңалықтар</p>
+                      <p class="main__slider_category">Тарих</p>
+                    </div>
+                    <a href="#"><h1 class="main__slider_title">
+                      Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды
+                    </h1></a>
+                    <a href="#" class="main__slider_read_more">
+                      <img src="img/icons/iwwa_arrow-right.svg" alt="" class="main__slider_read_more_img">
+                      <h4 class="main__slider_read_more_text">Толық оқу</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="main_slider3">
+                  <div class="main__slider_content">
+                    <div class="main__slider_categories">
+                      <p class="main__slider_category">Жаңалықтар</p>
+                      <p class="main__slider_category">Тарих</p>
+                    </div>
+                    <a href="#"><h1 class="main__slider_title">
+                      Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды
+                    </h1></a>
+                    <a href="#" class="main__slider_read_more">
+                      <img src="img/icons/iwwa_arrow-right.svg" alt="" class="main__slider_read_more_img">
+                      <h4 class="main__slider_read_more_text">Толық оқу</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="main_slider4">
+                  <div class="main__slider_content">
+                    <div class="main__slider_categories">
+                      <p class="main__slider_category">Жаңалықтар</p>
+                      <p class="main__slider_category">Тарих</p>
+                    </div>
+                    <a href="#"><h1 class="main__slider_title">
+                      Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды
+                    </h1></a>
+                    <a href="#" class="main__slider_read_more">
+                      <img src="img/icons/iwwa_arrow-right.svg" alt="" class="main__slider_read_more_img">
+                      <h4 class="main__slider_read_more_text">Толық оқу</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="main_slider5">
+                  <div class="main__slider_content">
+                    <div class="main__slider_categories">
+                      <p class="main__slider_category">Жаңалықтар</p>
+                      <p class="main__slider_category">Тарих</p>
+                    </div>
+                    <a href="#"><h1 class="main__slider_title">
+                      Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды
+                    </h1></a>
+                    <a href="#" class="main__slider_read_more">
+                      <img src="img/icons/iwwa_arrow-right.svg" alt="" class="main__slider_read_more_img">
+                      <h4 class="main__slider_read_more_text">Толық оқу</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="main_slider6">
+                  <div class="main__slider_content">
+                    <div class="main__slider_categories">
+                      <p class="main__slider_category">Жаңалықтар</p>
+                      <p class="main__slider_category">Тарих</p>
+                    </div>
+                    <a href="#"><h1 class="main__slider_title">
+                      Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды
+                    </h1></a>
+                    <a href="#" class="main__slider_read_more">
+                      <img src="img/icons/iwwa_arrow-right.svg" alt="" class="main__slider_read_more_img">
+                      <h4 class="main__slider_read_more_text">Толық оқу</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__other_news">
+             <a href="#" class="main__other_news_items" id="main_other_news1"></a>
+             <a href="#" class="main__other_news_items" id="main_other_news2"></a>
+             <a href="#" class="main__other_news_items" id="main_other_news3"></a>
+             <a href="#" class="main__other_news_items" id="main_other_news4"></a>
+             <a href="#" class="main__other_news_items" id="main_other_news5"></a>
+          </div>
+          <div class="aside__preface2">
+            <h3 class="aside__preface2_title">
+              TWESCO Президенті
+            </h3>
+            <img src="img/twesco-avatar.jpg" alt="" class="aside__preface2_avatar">
+            <h2 class="aside__preface2_name">
+              Қыдырәлі Дархан Қуандықұлы
+            </h2>
+            <p class="aside__preface2_text">
+              Құрметті, достар! <br>
+              Түркі академиясы халықаралық ұйымының ресми порталына қош келдіңіздер!
+            </p>
+          </div>
+        </div>
+        <div class="turkic_news">
+          <div class="turkic_news_title">
+            <img src="img/icons/oyu-arrow-right.svg" alt="" class="turkic_news_title_img">
+            <a href="#"><h2 class="turkic_news_title_text">Түркі әлемінің жаңалықтары</h2></a>
+          </div>
+          <div class="turkic_news_content">
+            <a href="#" class="turkic_news_items" id="turkic_news1"></a>
+            <a href="#" class="turkic_news_items" id="turkic_news2"></a>
+            <a href="#" class="turkic_news_items" id="turkic_news3"></a>
+          </div>
+        </div>
+      </div>
+      <div class="aside__content">
+        <div class="aside__preface">
+          <h3 class="aside__preface_title">
+            TWESCO Президенті
+          </h3>
+          <img src="img/twesco-avatar.jpg" alt="" class="aside__preface_avatar">
+          <h2 class="aside__preface_name">
+            Қыдырәлі Дархан Қуандықұлы
+          </h2>
+          <p class="aside__preface_text">
+            Құрметті, достар! <br>
+            Түркі академиясы халықаралық ұйымының ресми порталына қош келдіңіздер!
+          </p>
+        </div>
+        <div class="aside__journals">
+          <div class="aside__journals_title">
+            <img src="img/icons/oyu-arrow-right.svg" alt="" class="aside__journals_title_img">
+            <h2 class="aside__journals_title_text">
+              Altaistics and turcology
+            </h2>
+          </div>
+          <hr class="aside__line">
+          <div class="aside__journals_items">
+            <a href="#"><img src="img/book-turkolog.jpg" alt="" class="aside__journal1"></a>
+          <a href="#"><img src="img/book-global-turk.jpg" alt="" class="aside__journal2"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery__title">
+        <img src="img/icons/oyu-arrow-right.svg" alt="" class="gallery__title_img">
+        <a href="#"><h2 class="gallery__title_text">Галерея</h2></a>
+      </div>
+      <hr class="gallery__line">
+      <div class="gallery__content">
+        <div class="gallery__left">
+          <div class="gallery__left_main js-video-button" data-video-id='TlCLfTw67xs'>
+            <a href="javascript:void(0)"><img src="img/icons/play-icon.svg" alt="" class="gallery__play_modal"></a>
+          </div>
+          <div class="gallery__left_items js-video-button" data-video-id='1PjesBVPJzA'>
+            <a href="javascript:void(0)" class="gallery__left_item_icon" id="gallery__left_item1">
+              <img src="img/gallery-modal-bg-1.jpg" alt="" class="gallery__left_item_bg">
+              <img src="img/icons/play-mini-icon.svg" alt="" class="gallery__left_item_play">
+            </a>
+            <a href="javascript:void(0)">
+              <h2 class="gallery__left_item_text">
+                  TWESCO басшысы TRT тікелей эфиріне қатысты.
+              </h2>
+            </a>
+            <a href="javascript:void(0)">
+              <h2 class="gallery__left_item_time">08:09</h2>
+            </a>
+          </div>
+          <div class="gallery__left_items js-video-button" data-video-id='39cX0HHEKns'>
+            <a href="javascript:void(0)" class="gallery__left_item_icon" id="gallery__left_item2">
+              <img src="img/gallery-modal-bg-2.jpg" alt="" class="gallery__left_item_bg">
+              <img src="img/icons/play-mini-icon.svg" alt="" class="gallery__left_item_play">
+            </a>
+            <a href="javascript:void(0)">
+              <h2 class="gallery__left_item_text">
+                  TWESCO басшысы TRT тікелей эфиріне қатысты.
+              </h2>
+            </a>
+            <a href="javascript:void(0)">
+              <h2 class="gallery__left_item_time">08:09</h2>
+            </a>
+          </div>
+          <div class="gallery__left_items js-video-button" data-video-id='1PjesBVPJzA'>
+            <a href="javascript:void(0)" class="gallery__left_item_icon" id="gallery__left_item3">
+              <img src="img/gallery-modal-bg-1.jpg" alt="" class="gallery__left_item_bg">
+              <img src="img/icons/play-mini-icon.svg" alt="" class="gallery__left_item_play">
+            </a>
+            <a href="javascript:void(0)">
+              <h2 class="gallery__left_item_text">
+                  @lang('TWESCO басшысы TRT тікелей эфиріне қатысты.')
+              </h2>
+            </a>
+            <a href="javascript:void(0)">
+              <h2 class="gallery__left_item_time">08:09</h2>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="gallery__centre">
+          <div href="#" class="gallery__center gallery__center_item">
+          </div>
+          <div class="gallery__center_title">
+            <h3 class="gallery__center_category">Апта саны</h3>
+            <h2 class="gallery__center_text">Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды</h2>
+          </div>
+        </a>
+        <div class="gallery__center_adaptive">
+          <div class="gallery__center_adaptive_title">
+            <h3 class="gallery__center_adaptive_category">Апта саны</h3>
+            <h2 class="gallery__center_adaptive_text">Turkic Weekly электрондық бюллетенінің жаңа саны жарияланды</h2>
+          </div>
+        </div>
+        <div class="gallery__right">
+          <a href="#" class="gallery__right_items">
+            <img src="img/gallery-right-img1.jpg" alt="" class="gallery__right_img">
+            <div class="gallery__right_title">
+              <h3 class="gallery__right_category">Видео</h3>
+              <h2 class="gallery__right_text">Turkic Weekly электрондық бюллетенінің жаңа саны жар ...</h2>
+            </div>
+          </a>
+          <a href="#" class="gallery__right_items">
+            <img src="img/gallery-right-img2.jpg" alt="" class="gallery__right_img">
+            <div class="gallery__right_title">
+              <h3 class="gallery__right_category">Видео</h3>
+              <h2 class="gallery__right_text">Turkic Weekly электрондық бюллетенінің жаңа саны жар ...</h2>
+            </div>
+          </a>
+          <a href="#" class="gallery__right_items">
+            <img src="img/gallery-right-img3.jpg" alt="" class="gallery__right_img">
+            <div class="gallery__right_title">
+              <h3 class="gallery__right_category">Видео</h3>
+              <h2 class="gallery__right_text">Turkic Weekly электрондық бюллетенінің жаңа саны жар ...</h2>
+            </div>
+          </a>
+          <a href="#" class="gallery__right_items">
+            <img src="img/gallery-right-img4.jpg" alt="" class="gallery__right_img">
+            <div class="gallery__right_title">
+              <h3 class="gallery__right_category">Видео</h3>
+              <h2 class="gallery__right_text">Turkic Weekly электрондық бюллетенінің жаңа саны жар ...</h2>
+            </div>
+          </a>
+          <a href="#" class="gallery__right_items">
+            <img src="img/gallery-right-img5.jpg" alt="" class="gallery__right_img">
+            <div class="gallery__right_title">
+              <h3 class="gallery__right_category">Видео</h3>
+              <h2 class="gallery__right_text">Turkic Weekly электрондық бюллетенінің жаңа саны жар ...</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="articles">
+    <div class="container">
+      <div class="articles__header">
+        <div class="articles__title">
+          <img src="img/icons/oyu-arrow-right.svg" alt="" class="articles__title_img">
+          <a href="#"><h2 class="articles__title_text">Мақалалар</h2></a>
+        </div>
+        <div class="articles__tab">
+          <button class="articles__tablinks articles__active" onclick="openArticleTab(event, 'article_literature')">Әдебиет</button>
+          <button class="articles__tablinks" onclick="openArticleTab(event, 'article_nationalClothes')">Ұлттық-киім</button>
+          <button class="articles__tablinks" onclick="openArticleTab(event, 'article_nationalFood')">Ұлттық-тағам</button>
+          <button class="articles__tablinks" onclick="openArticleTab(event, 'article_tradition')">Салт-дәстүр</button>
+          <button class="articles__tablinks" onclick="openArticleTab(event, 'article_history')">Тарих</button>
+        </div>
+      </div>
+      <hr class="articles__line">
+      <div class="article__content">
+        <div class="articles__tabcontent" id="article_literature" style="display: grid;">
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img2.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Сағадат Нұрмағамбетовтың туғанына 95 жыл</h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#"class="articles__tabcontent_items">
+            <img src="img/articles_img3.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Тұрар Рысқұлов – ұлт баспасөзін ұлықтаушы</h2>
+          </a>
+        </div>
+        <div class="articles__tabcontent" id="article_nationalClothes" style="display: none;">
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img2.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Сағадат Нұрмағамбетовтың туғанына 95 жыл</h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img3.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Тұрар Рысқұлов – ұлт баспасөзін ұлықтаушы</h2>
+          </a>
+        </div>
+        <div class="articles__tabcontent" id="article_nationalFood" style="display: none;">
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img2.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Сағадат Нұрмағамбетовтың туғанына 95 жыл</h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img3.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Тұрар Рысқұлов – ұлт баспасөзін ұлықтаушы</h2>
+          </a>
+        </div>
+        <div class="articles__tabcontent" id="article_tradition" style="display: none;">
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img2.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Сағадат Нұрмағамбетовтың туғанына 95 жыл</h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img3.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Тұрар Рысқұлов – ұлт баспасөзін ұлықтаушы</h2>
+          </a>
+        </div>
+        <div class="articles__tabcontent" id="article_history" style="display: none;">
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img2.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Сағадат Нұрмағамбетовтың туғанына 95 жыл</h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img1.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">«Кетбұғадай билерден, Кеңес сұрар күн қайда ?» - найман мемлекеті және билік </h2>
+          </a>
+          <a href="#" class="articles__tabcontent_items">
+            <img src="img/articles_img3.jpg" alt="" class="articles__images">
+            <h3 class="articles__category">Жаңалықтар</h3>
+            <h2 class="articles__text">Тұрар Рысқұлов – ұлт баспасөзін ұлықтаушы</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="holy_places">
+    <div class="container">
+      <div class="holy_places__title">
+        <h1 class="holy_places__title_text">
+          Түркі әлемінің киелі жерлері
+        </h1>
+        <a href="#" class="holy_places__read_more">
+          <img src="img/icons/iwwa_arrow-right.svg" alt="" class="holy_places__read_more_img">
+          <h4 class="holy_places__read_more_text">Толық көру</h4>
+        </a>
+      </div>
+      <div class="holy_places__content">
+        <a href="#" class="holy_places__fields">
+          <div class="holy_places__items holy_places_item1">
+          </div>
+          <h2 class="holy_places__item_text">Жошы хан <br> кесенесі</h2>
+        </a>
+        <a href="#" class="holy_places__fields">
+          <div class="holy_places__items holy_places_item2">
+          </div>
+          <h2 class="holy_places__item_text">Яссауи <br> кесенесі</h2>
+        </a>
+        <a href="#" class="holy_places__fields">
+          <div class="holy_places__items holy_places_item3">
+          </div>
+          <h2 class="holy_places__item_text">Күлтегін <br> ескерткіші</h2>
+        </a>
+      </div>
+    </div>
+    <img src="img/oyu-big.png" alt="" class="holy_places__bg">
+  </section>
+
+  <section class="books">
+    <div class="container">
+      <div class="books__title">
+        <img src="img/icons/oyu-arrow-right.svg" alt="" class="books__title_img">
+        <a href="#"><h2 class="books__title_text">Кітаптар</h2></a>
+      </div>
+      <div class="books__content">
+        <a href="#"><img src="img/kitap-1.jpg" alt="" class="books__content_img"></a>
+        <a href="#"><img src="img/kitap-2.jpg" alt="" class="books__content_img"></a>
+        <a href="#"><img src="img/kitap-3.jpg" alt="" class="books__content_img"></a>
+        <a href="#"><img src="img/kitap-4.jpg" alt="" class="books__content_img"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="organization">
+    <div class="container">
+      <div class="organization__title">
+        <img src="img/icons/oyu-arrow-right.svg" alt="" class="organization__title_img">
+        <a href="#"><h2 class="organization__title_text">Организация тюрского сотрудничества</h2></a>
+      </div>
+      <div class="organization__content">
+        <div class="swiper organizationSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/organization-logo-1.png" alt="" class="organization__image"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/organization-logo-2.png" alt="" class="organization__image"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/organization-logo-3.png" alt="" class="organization__image"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/organization-logo-4.png" alt="" class="organization__image"></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer> 
+    <div class="container">
+      <div class="footer__up">
+        <a href="index.html"><img src="img/main-logo.svg" alt="" class="footer__logo"></a>
+        <div class="footer__up_items">
+          <ul>
+            <li><a href="#">Біз туралы</a></li>
+            <li><a href="#">Архив</a></li>
+            <li><a href="#">Байланыс</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__content1">
+        <h3 class="footer__content1_text">
+          Тәуелсіздік даңғылы , <strong>010000</strong>, <br>
+          "Бейбітшілік және келісім сарайы" <br>
+          Қазақстан, Нұр-Сұлтан қаласы, <strong>010000</strong>
+        </h3>
+        <div class="footer__social">
+          <a href="#"><img src="img/icons/ig-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/vk-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/tw-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/fb-icon.svg" alt="" class="footer__social_items"></a>
+          <!-- <a href="#"><img src="img/icons/apple-icon.svg" alt="" class="footer__social_items"></a>
+          <a href="#"><img src="img/icons/playstore-icon.svg" alt="" class="footer__social_items"></a> -->
+        </div>
+      </div>
+      <div class="footer__content2">
+        <h3 class="footer__content2_text">
+          Қабылдау бөлмесі: <br>
+          <a href="tel:+77172574982">+7(7172)57-49-82</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          Халықаралық қатынастар <br>
+          және протокол бөлімі: <br>
+          <a href="tel:87273540094">8-727-354-00-94</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          Түркі кітапханасы: <br>
+          <a href="tel:+77172744786">+7(7172)74-47-86</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          Ғылым бөлімі: <br>
+          <a href="tel:+77172744785">+7(7172)74-47-85</a>
+        </h3>
+        <h3 class="footer__content2_text">
+          E-mail: <br> 
+          <a href="mailto:officetwesco@gmail.com">officetwesco@gmail.com</a>
+        </h3>
+      </div>
+      <div class="footer__down">
+        <h3 class="footer__down_text">
+          <strong>© Copyright 2015-2021 TWESCO</strong>| Сайт материалын пайдалану үшін редакция <br> келісімі керек және гиперсілтеме жасау міндетті
+        </h3>
+        <h3 class="footer__down_text">
+          Қате тапсаңыз — қажетті бөлікті таңдап <span>ctrl+enter</span> басыңыз.
+        </h3>
+        <h3 class="footer__down_text">
+          Сайт жасалуы , <a href="#"><img class="footer__dev_logo" src="img/icons/logo-buginsoft.svg" alt=""></a>
+        </h3>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/modal-video.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
